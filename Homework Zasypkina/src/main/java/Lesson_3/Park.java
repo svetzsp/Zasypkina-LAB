@@ -3,7 +3,10 @@ package Lesson_3;
     // времени их работы и стоимости.
 
 public class Park {
-    String name;
+    private String name;
+    public Park(String name) {
+        this.name = name;
+    };
     private Attractions attractions;
 
     public class Attractions {
