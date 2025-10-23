@@ -11,7 +11,8 @@ public class Product {
     private String country;
     private String price;
     private String reservationStatus;
-    public Product (String name, String date1, String manufacturer1, String country1, String price1, String reservationStatus1) {
+
+    public Product(String name, String date1, String manufacturer1, String country1, String price1, String reservationStatus1) {
         this.name = name;
         this.date = date1;
         this.country = country1;
@@ -19,7 +20,8 @@ public class Product {
         this.reservationStatus = reservationStatus1;
         this.manufacturer = manufacturer1;
     }
-    public void info () {
+
+    public void info() {
         System.out.println(STR."Название: \{name}, Дата изготовления: \{date}, Изготовитель: \{manufacturer}, Страна: \{country}, Цена: \{price}, Статус бронирования: \{reservationStatus}");
     }
 }

@@ -28,7 +28,9 @@ public class Main {
         for (int i = 0; i < productMass.length; i++) {
             productMass[i].info();
         }
+
         Park Luna = new Park("Luna-park");
+
         Park.Attractions Cars = Luna.new Attractions("Cars", "14.00:19.00", 10);
         Cars.info();
 
