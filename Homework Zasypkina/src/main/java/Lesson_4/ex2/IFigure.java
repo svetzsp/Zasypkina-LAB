@@ -1,4 +1,4 @@
-package Lesson_4;
+package Lesson_4.ex2;
 
 public interface IFigure {
     //Применяя интерфейсы написать программу расчета периметра и площади геометрических фигур: круг, прямоугольник, треугольник.
@@ -9,17 +9,18 @@ public interface IFigure {
     //
     //Попробуйте реализовать базовые методы, такие как расчет периметра фигур, в качестве дефолтных методов в интерфейсе.
     default float perimeter(float r) {
-        float i = (2 * 3.14F * r);
-        return i;
+        return 2 * 3.14F * r;
     }
+
     default int perimeter(int s1, int s2) {
-        int z = (2 * (s1 + s2));
-        return z;
+        return 2 * (s1 + s2);
     }
+
     default int perimeter(int s1, int s2, int s3) {
-        int y = (s1 + s2 + s3);
-        return y;
+        return s1 + s2 + s3;
     }
+
     float area();
+
     void info();
 }

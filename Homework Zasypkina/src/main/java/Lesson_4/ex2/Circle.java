@@ -1,7 +1,8 @@
-package Lesson_4;
+package Lesson_4.ex2;
 
 public class Circle extends Figure {
     private float radius;
+
     public Circle(String colorBackground, String colorLine, float radius) {
         super(colorBackground, colorLine);
         this.radius = radius;
@@ -15,7 +16,7 @@ public class Circle extends Figure {
 
     @Override
     public float area() {
-        float a = (3.14F*radius*radius);
+        float a = (3.14F * radius * radius);
         return a;
     }
 

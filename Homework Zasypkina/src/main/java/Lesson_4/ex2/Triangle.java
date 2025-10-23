@@ -1,4 +1,4 @@
-package Lesson_4;
+package Lesson_4.ex2;
 
 public class Triangle extends Figure {
     int s1;
