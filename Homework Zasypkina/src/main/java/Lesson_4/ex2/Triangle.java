@@ -1,9 +1,9 @@
 package Lesson_4.ex2;
 
 public class Triangle extends Figure {
-    int s1;
-    int s2;
-    int s3;
+    private int s1;
+    private int s2;
+    private int s3;
 
     public Triangle(String colorBackground, String colorLine, int s1, int s2, int s3) {
         super(colorBackground, colorLine);
@@ -22,6 +22,5 @@ public class Triangle extends Figure {
     @Override
     public void info() {
         System.out.println(colorBackground + ", " + colorLine + ", " + "периметр " + perimeter(s1, s2, s3) + ", площадь " + area());
-
     }
 }

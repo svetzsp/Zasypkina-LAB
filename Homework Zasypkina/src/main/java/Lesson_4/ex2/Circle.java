@@ -10,14 +10,12 @@ public class Circle extends Figure {
 
     @Override
     public float area() {
-        float a = (3.14F * radius * radius);
-        return a;
+        return 3.14F * radius * radius;
     }
 
     @Override
     public void info() {
         //System.out.println(STR."радиус \{radius}");
         System.out.println(colorBackground + ", " + colorLine + ", " + "периметр " + perimeter(radius) + ", площадь " + area());
-
     }
 }
