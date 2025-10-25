@@ -41,5 +41,4 @@ public class Main {
         Park.Attractions CarsGorky = Gorky.new Attractions("Cars", "14:00-19:00", 10);
         CarsGorky.info();
     }
-
 }
