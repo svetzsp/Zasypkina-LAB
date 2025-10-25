@@ -4,7 +4,7 @@ package Lesson_4.ex1;
 // В качестве параметра каждому методу передается длина препятствия. Результатом выполнения действия будет печать в консоль.
 // (Например, dogBobik.run(150); -> 'Бобик пробежал 150 м.');
 public class Animal {
-    String name;
+    protected String name;
     protected int swimLimit;
     protected int runLimit;
     private static int count = 0;

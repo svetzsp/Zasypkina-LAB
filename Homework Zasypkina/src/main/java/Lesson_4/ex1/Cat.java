@@ -2,10 +2,10 @@ package Lesson_4.ex1;
 
 //У каждого животного есть ограничения на действия (бег: кот 200 м., собака 500 м.; плавание: кот не умеет плавать, собака 10 м.).
 public class Cat extends Animal {
-    Boolean satiety = false;
     private static int count = 0;
 
     public Cat() {
+        Boolean satiety = false;
         count++;
         runLimit = 200;
         swimLimit = 0;
@@ -24,17 +24,14 @@ public class Cat extends Animal {
 // для упрощения логики программы).
     public void eat(int f, Bowl b) {
         if (f <= b.food) {
-            satiety = true;
             b.food = b.food - f;
-            System.out.println(name + " наелся");
+            System.out.println(STR."\{name} наелся");
         } else {
-            System.out.println(name + " остался голоден, еды не хватило!");
+            System.out.println(STR."\{name} остался голоден, еды не хватило!");
         }
     }
 
     public void hungry() {
-        satiety = false;
+        System.out.println(STR."\{name} снова проголодался");
     }
 }
-
-
