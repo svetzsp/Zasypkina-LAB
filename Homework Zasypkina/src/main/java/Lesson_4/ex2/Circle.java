@@ -8,12 +8,6 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
-//    @Override
-//    public float perimeter(float r) {
-//        super.perimeter(r);
-//        return r;
-//    }
-
     @Override
     public float area() {
         float a = (3.14F * radius * radius);

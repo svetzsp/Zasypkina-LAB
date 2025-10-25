@@ -1,8 +1,8 @@
 package Lesson_4.ex2;
 
 public class Rectangle extends Figure {
-    int side1;
-    int side2;
+    protected int side1;
+    protected int side2;
 
     public Rectangle(String colorBackground, String colorLine, int side1, int side2) {
         super(colorBackground, colorLine);
