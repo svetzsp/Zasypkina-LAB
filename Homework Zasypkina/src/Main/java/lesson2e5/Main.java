@@ -1,6 +1,6 @@
 package lesson2e5;
 
-public class main {
+public class Main {
     //В методе main() вызвать полученный метод, обработать возможные исключения MyArraySizeException и MyArrayDataException
     // и вывести результат расчета.
     static void main() {
@@ -44,7 +44,7 @@ public class main {
                     int k = Integer.parseInt(t[i][j]);
                     sum = sum + k;
                 } catch (NumberFormatException e) {
-                    throw new MyArrayDataException("в ячейке [" + i + "]:[" + j + "] несовместимые данные. Сумма до сбоя равна " + sum);
+                    throw new MyArrayDataException("В ячейке [" + i + "]:[" + j + "] некорректные данные.", e);
                 }
             }
         }
