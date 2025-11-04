@@ -1,3 +1,5 @@
+package lesson2e7Tests;
+
 import Lesson_4.ex2.Triangle;
 import lesson2e7.Factorial;
 import lesson2e7.Match;
