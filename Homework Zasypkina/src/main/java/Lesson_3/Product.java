@@ -22,6 +22,6 @@ public class Product {
     }
 
     public void info() {
-        System.out.println(STR."Название: \{name}, Дата изготовления: \{date}, Изготовитель: \{manufacturer}, Страна: \{country}, Цена: \{price}, Статус бронирования: \{reservationStatus}");
+        System.out.println("Название: " + name + ", Дата изготовления: " + date + ", Изготовитель: " + manufacturer + ", Страна: " + country + ", Цена: " + price + ", Статус бронирования: " + reservationStatus);
     }
 }

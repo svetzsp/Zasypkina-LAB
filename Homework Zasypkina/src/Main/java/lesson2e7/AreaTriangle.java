@@ -8,8 +8,8 @@ import Lesson_4.ex2.Triangle;
 //совершающую арифметические действия с двумя целыми числами (сложение, вычитание, деление и умножение);
 //сравнивающую два целых числа.
 public class AreaTriangle {
-    static void main() {
-        Triangle t2 = new Triangle("синий", "голубой", 5, 5, 7);
-        t2.area();
+    public static void main(String[] args) {
+        Triangle t2 = new Triangle("синий", "голубой", 2, 3, 3);
+        System.out.println(t2.area());
     }
 }

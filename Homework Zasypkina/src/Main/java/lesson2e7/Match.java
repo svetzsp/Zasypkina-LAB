@@ -2,6 +2,7 @@ package lesson2e7;
 
 //Напишите программу, сравнивающую два целых числа.
 public class Match {
+    public int sum;
     private int m1;
     private int m2;
 

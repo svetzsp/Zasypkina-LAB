@@ -25,13 +25,13 @@ public class Cat extends Animal {
     public void eat(int f, Bowl b) {
         if (f <= b.food) {
             b.food = b.food - f;
-            System.out.println(STR."\{name} наелся");
+            System.out.println(name + " наелся");
         } else {
-            System.out.println(STR."\{name} остался голоден, еды не хватило!");
+            System.out.println(name + " остался голоден, еды не хватило!");
         }
     }
 
     public void hungry() {
-        System.out.println(STR."\{name} снова проголодался");
+        System.out.println(name + " снова проголодался");
     }
 }
