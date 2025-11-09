@@ -1,21 +1,19 @@
 package lesson2e7;
 
 //Напишите программу, сравнивающую два целых числа.
-public class Match {
+public class Math {
     private int m1;
     private int m2;
 
-    public Match(int m1, int m2) {
+    public Math(int m1, int m2) {
         this.m1 = m1;
         this.m2 = m2;
     }
 
-    public boolean isMatch() {
-        if (m1 == m2) {
-            return true;
-        } else {
-            return false;
-        }
+    public int isMatch() {
+        if (m1 == m2) {return 0;}
+        else if (m1 < m2) {return -1;}
+        else {return 1;}
     }
 
     public int sum() {
@@ -32,10 +30,5 @@ public class Match {
 
     public int devide() {
         return m1 / m2;
-    }
-
-    static void main() {
-        Match intMatch = new Match(4, 5);
-        System.out.println(intMatch.isMatch());
     }
 }

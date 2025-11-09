@@ -10,8 +10,4 @@ public class Factorial {
         }
         return result;
     }
-
-    static void main() {
-        System.out.println(factorial(20));
-    }
 }

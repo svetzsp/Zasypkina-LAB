@@ -2,7 +2,8 @@ package lesson2e7Tests;
 
 import Lesson_4.ex2.Triangle;
 import lesson2e7.Factorial;
-import lesson2e7.Match;
+import lesson2e7.Math;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,17 +14,49 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class junitTests {
+    Math match1;
+    Math match2;
+    Math match3;
+    Math sum1;
+    Math subs1;
+    Math mult1;
+    Math dev1;
+    Triangle t3;
+
+    @BeforeEach
+    public void setUp() {
+        match1 = new Math(20, 20);
+        match2 = new Math(3, 5);
+        match3 = new Math(13, 8);
+        sum1 = new Math(65, 38);
+        subs1 = new Math(17, 23);
+        mult1 = new Math(15, 2);
+        dev1 = new Math(50, 2);
+    }
+
     @Test
-    @DisplayName("Сравнение целых чисел")
-    public void testMatch() {
-        Match match = new Match(7, 8);
-        boolean result = match.isMatch();
-        assertFalse(result, "7 должно быть не равно 8");
+    @DisplayName("Сравнение меньшего числа с бОльшим")
+    public void testMatchLess() {
+        int result = match2.isMatch();
+        assertEquals(-1, result, "3 должно быть меньше 5");
+    }
+
+    @Test
+    @DisplayName("Сравнение эквивалентных чисел")
+    public void testMatchEqual() {
+        int result = match1.isMatch();
+        assertEquals(0, result, "Числа должны быть эквивалентны друг другу");
+    }
+
+    @Test
+    @DisplayName("Сравнение большего числа с меньшим")
+    public void testMatchMore() {
+        int result = match3.isMatch();
+        assertEquals(1, result, "13 должно быть больше 8");
     }
 
     @Test
     public void testSum() {
-        Match sum1 = new Match(65, 38);
         int result = sum1.sum();
         assertEquals(103, result, "65 + 38 должно получиться 103");
     }
@@ -31,28 +64,24 @@ public class junitTests {
     @Test
     @Disabled("тестирование пропуска теста")
     public void testSubsNeg() {
-        Match subs1 = new Match(17, 23);
         int result = subs1.subs();
         assertEquals(-6, result, "17 - 23 должно получиться минус 6");
     }
 
     @Test
     public void testSubs() {
-        Match subs1 = new Match(17, 23);
         int result = subs1.subs();
         assertEquals(-6, result, "17 - 23 должно получиться минус 6");
     }
 
     @Test
     public void testMult() {
-        Match mult1 = new Match(15, 2);
         int result = mult1.mult();
         assertEquals(30, result, "15 умножить на 2 должно получиться 30");
     }
 
     @Test
     public void testDevide() {
-        Match dev1 = new Match(50, 2);
         int result = dev1.devide();
         assertEquals(25, result, "50 разделить на 2 должно получиться 25");
     }
