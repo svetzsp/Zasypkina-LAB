@@ -23,8 +23,7 @@ public class Park {
         }
 
         public void info() {
-            System.out.println("Парк: " + name + ", Аттракцион: " + attraction + ", Время работы: "
-                    + timeWork + ", Цена: " + price);
+            System.out.println("Парк: " + name + ", Аттракцион: " + attraction + ", Время работы: " + timeWork + ", Цена: " + price);
         }
     }
 }
