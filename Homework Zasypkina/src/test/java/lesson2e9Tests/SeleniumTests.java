@@ -15,13 +15,13 @@ public class SeleniumTests {
     static WebDriver driver = new ChromeDriver();
 
     @BeforeAll
-    public static void GoHomePage() {
+    public static void goHomePage() {
         driver.get("https://www.mts.by/");
         driver.findElement(By.id("cookie-agree")).click();
     }
 
     @BeforeEach
-    public void GoPage() {
+    public void goPage() {
         driver.get("https://www.mts.by/");
     }
 
