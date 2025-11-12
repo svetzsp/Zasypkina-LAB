@@ -48,6 +48,17 @@
             <artifactId>hamcrest</artifactId>
             <version>3.0</version>
             <scope>test</scope>
+      
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>LATEST</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>6.2.0</version>
         </dependency>
     </dependencies>
 </project>
